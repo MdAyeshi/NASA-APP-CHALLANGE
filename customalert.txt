@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/place"
+        android:hint="PLACE"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/windspeed"
+        android:hint="WIND SPEED"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/direction"
+        android:hint="DIRECTION"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lat"
+        android:hint="LATITUDE"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lon"
+        android:hint="LONGITUDE"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp"
+        android:hint="TEMPERATURE"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>

@@ -1,0 +1,29 @@
+AlertDialog.Builder ad= new AlertDialog.Builder(this);
+            View v1= getLayoutInflater().inflate(R.layout.customalert,null);
+            ad.setView(v1);
+            final Dialog d= ad.create();
+            d.show();
+            TextView place=(TextView)v1.findViewById(R.id.place);
+            TextView windspeed=(TextView)v1.findViewById(R.id.windspeed);
+            TextView Dire=(TextView)v1.findViewById(R.id.direction);
+            TextView lat=(TextView)v1.findViewById(R.id.lat);
+            TextView lon=(TextView)v1.findViewById(R.id.lon);
+            TextView temp=(TextView)v1.findViewById(R.id.temp);
+            ad.setNegativeButton("No",new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    finish();
+                }
+            });
+            Random rm= new Random();
+            int winds= (rm.nextInt(10-3)+3);
+            int Direc=(rm.nextInt(120-70)+70);
+            int latt=(rm.nextInt(60-40)+40);
+            int lont=(rm.nextInt(10-1)+1);
+            int tempt=(rm.nextInt(48-29)+29);
+            place.setText(Integer.parseInt(String.valueOf(winds)));
+            Dire.setText(Integer.parseInt(String.valueOf(Direc)));
+            lat.setText(Integer.parseInt(String.valueOf(latt)));
+            lon.setText(Integer.parseInt(String.valueOf(lont)));
+            temp.setText(Integer.parseInt(String.valueOf(tempt)));
+        }
